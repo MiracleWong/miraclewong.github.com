@@ -1,0 +1,54 @@
+sidebar:
+  menu:
+    post: '[博客](/)'
+    wiki: '[项目](/wiki/)'
+    notes: '[便笺](/notes/)'
+    more: '[关于](/about/)'
+  widgets:
+    default_layout: [welcome, recent]
+
+article:
+  # 分类颜色
+  category_color:
+    '新闻稿': '#DA0F47'
+    '设计开发': '#03a9f4'
+    '解决方案': '#ff9800'
+    '技术加油站': '#4caf50'
+    '开源库': '#4caf50'
+    '博客主题': '#ffa000'
+  share: [wechat, weibo, email, link]
+  related_posts:
+    enable: false
+
+comments:
+  service: valine
+  valine:
+    appId: 
+    appKey: 
+
+footer:
+  social:
+    - title: GitHub
+      icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/>'
+      url: https://github.com/miraclewong
+    - title: Comments
+      icon: '<img src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/942ebbf1a4b91.svg"/>'
+      url: /about/#comments
+  sitemap:
+    '博客':
+      - '[近期发布](/)'
+      - '[分类](/categories/)'
+      - '[标签](/tags/)'
+      - '[归档](/archives/)'
+    '社交':
+      - '[友链](/friends/)'
+      - '[留言板](/about/#comments)'
+    '更多':
+      - '[关于本站](/about/)'
+      - '[GitHub](https://github.com/MiracleWong)'
+  source: '[GitHub](https://github.com/MiracleWong/miraclewong.github.com/)'
+
+
+style:
+  codeblock:
+    scrollbar: 0px
