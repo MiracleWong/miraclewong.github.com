@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 5.4.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  <title>Android UI控件 之 EditText的属性 - 肆意生长</title>
+
+  
+    <meta name="description" content="这里说是EditText的属性的总结。其实很多的内容，在其他的空间如TextView和Button上，都是通用的。这里一并写上。  android:hint&#x3D;”请输入数字！”&#x2F;&#x2F;设置显示在空间上的提示信息 android:numeric&#x3D;”integer”&#x2F;&#x2F;设置只能输入整数，如果是小数则是：decimal android:singleLine&#x3D;”true”&#x2F;&#x2F;设置单行输入，一旦设置为true，则">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android UI控件 之 EditText的属性">
+<meta property="og:url" content="http://www.miraclewong.cc/2016/01/09/property-of-edittext/index.html">
+<meta property="og:site_name" content="肆意生长">
+<meta property="og:description" content="这里说是EditText的属性的总结。其实很多的内容，在其他的空间如TextView和Button上，都是通用的。这里一并写上。  android:hint&#x3D;”请输入数字！”&#x2F;&#x2F;设置显示在空间上的提示信息 android:numeric&#x3D;”integer”&#x2F;&#x2F;设置只能输入整数，如果是小数则是：decimal android:singleLine&#x3D;”true”&#x2F;&#x2F;设置单行输入，一旦设置为true，则">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2016-01-09T12:10:00.000Z">
+<meta property="article:modified_time" content="2021-10-26T09:09:38.409Z">
+<meta property="article:author" content="Miracle Wong">
+<meta property="article:tag" content="总结">
+<meta property="article:tag" content="Android">
+<meta name="twitter:card" content="summary">
+  
+  
+
+  <!-- feed -->
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+</head>
+
+<body>
+  
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+<header class="header">
+
+<div class="logo-wrap"><a class="title" href="/"><div class="main">肆意生长</div><div class="sub cap">Hello World</div></a></div>
+<nav class="menu dis-select"><a class="nav-item active" href="/">博客</a><a class="nav-item" href="/wiki/">项目</a><a class="nav-item" href="/notes/">便笺</a><a class="nav-item" href="/about/">关于</a></nav></header>
+
+<div class="widgets">
+
+
+<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="line"></div><a class="more-item" href="/2015/05/08/%E3%80%90%E7%BF%BB%E8%AF%91%E3%80%91%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E4%BD%BF%E7%94%A8%E4%B8%A4%E5%8F%B0%E7%94%B5%E8%84%91%E5%8F%98%E5%BE%97%E6%9B%B4%E5%8A%A0%E6%9C%89%E6%95%88%E7%8E%87/"><div class="cap"><time>2021-10-26</time><span>时间管理</span></div><span class="title">【翻译】如何通过使用两台电脑变得更加有效率</span></a><div class="line"></div><a class="more-item" href="/2014/12/13/%E5%8E%BB%E7%BB%8F%E5%8E%86%E5%90%A7%EF%BC%8C%E5%8E%BB%E5%AE%9A%E4%B9%89%E8%87%AA%E5%B7%B1%E7%9A%84%E4%BA%BA%E7%94%9F/"><div class="cap"><time>2021-10-26</time><span>成长</span></div><span class="title">去经历吧，去定义自己的人生</span></a><div class="line"></div><a class="more-item" href="/2015/03/28/%E9%94%90%E8%A8%80%E9%94%90%E8%AF%AD%E2%80%94%E2%80%94%E6%88%91%E7%9C%8B%E3%80%8A%E7%8E%8B%E7%89%8C%E7%89%B9%E5%B7%A5%E3%80%8B/"><div class="cap"><time>2021-10-26</time><span>锐言锐语</span></div><span class="title">锐言锐语——我看《王牌特工》</span></a><div class="line"></div><a class="more-item" href="/2014/10/03/%E6%89%93%E9%80%A0%E4%B8%80%E6%AC%BE%E4%BE%BF%E6%90%BA%E7%89%88%E7%9A%84Sublime%20Text/"><div class="cap"><time>2021-10-26</time><span>工具</span></div><span class="title">写给24岁的自己</span></a><div class="line"></div><a class="more-item" href="/2014/12/14/%E7%AC%AC%E4%B8%80%E6%AC%A1%EF%BC%9A%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98/"><div class="cap"><time>2021-10-26</time><span>随笔</span></div><span class="title">第一次：机械键盘</span></a></div></div>
+
+
+
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" title="GitHub" href="https://github.com/miraclewong" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/08a41b181ce68.svg"/></a><a class="social" title="Comments" href="/about/#comments" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.3/social/942ebbf1a4b91.svg"/></a></div></footer>
+
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">肆意生长</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/Android/">Android</a></div><div id="post-meta">发布于&nbsp;<time datetime="2016-01-09T12:10:00.000Z">2016-01-09</time></div></div>
+
+<article class='content md post'>
+<h1 class="article-title"><span>Android UI控件 之 EditText的属性</span></h1>
+<p>这里说是EditText的属性的总结。其实很多的内容，在其他的空间如TextView和Button上，都是通用的。这里一并写上。</p>
+<ol>
+<li>android:hint=”请输入数字！”//设置显示在空间上的提示信息</li>
+<li>android:numeric=”integer”//设置只能输入整数，如果是小数则是：decimal</li>
+<li>android:singleLine=”true”//设置单行输入，一旦设置为true，则文字不会自动换行。</li>
+<li>android:password=”true”//设置只能输入密码</li>
+<li>android:textColor = “#ff8c00”//字体颜色</li>
+<li>android:textStyle=”bold”//字体，bold, italic, bolditalic</li>
+<li>android:textSize=”20dip”//大小</li>
+<li>android:capitalize = “characters”//以大写字母写</li>
+<li>android:textAlign=”center”//EditText没有这个属性，但TextView有，居中</li>
+<li>android:textColorHighlight=”#cccccc”//被选中文字的底色，默认为蓝色</li>
+<li>android:textColorHint=”#ffff00”//设置提示信息文字的颜色，默认为灰色android:textScaleX=”1.5”//控制字与字之间的间距</li>
+<li>android:typeface=”monospace”//字型，normal, sans, serif, monospace</li>
+<li>android:background=”@null”//背景，这里没有，指透明</li>
+<li>android:layout_weight=”1”//权重，控制控件之间的地位,在控制控件显示的大小时蛮有用的。</li>
+<li>android:textAppearance=”?android:attr/textAppearanceLargeInverse”//文字外观</li>
+<li>android:layout_gravity=”center_vertical”//设置控件显示的位置：默认top，这里居中显示，还有bottom</li>
+<li>android:gray=”top” //多行中指针在第一行第一位置</li>
+<li>et.setSelection(et.length());//调整光标到最后一行</li>
+<li>android:autoText //自动拼写帮助</li>
+<li>android:capitalize //首字母大写</li>
+<li>android:digits //设置只接受某些数字</li>
+<li>android：singleLine//是否单行或者多行，回车是离开文本框还是文本框增加新行</li>
+<li>android：numeric //只接受数字</li>
+<li>android：phoneNumber //输入电话号码</li>
+<li>android：editable //是否可编辑</li>
+<li>android:autoLink=”all” //设置文本超链接样式当点击网址时，跳向该网址 </li>
+<li>android:textAppearance=”?android:attr/textAppearanceLargeInverse”//文字外观，这里引用的是系统自带的一个外观，</li>
+<li>android:autoLink设置是否当文本为URL链接/email/电话号码/map时，文本显示为可点击的链接。可选值(none/web/email/phone/map/all)</li>
+<li>android:autoText如果设置，将自动执行输入值的拼写纠正。此处无效果，在显示输入法并输入的时候起作用。</li>
+<li>android:bufferType指定getText()方式取得的文本类别。选项editable 类似于StringBuilder可追加字符，也就是说getText后可调用append方法设置文本内容。spannable 则可在给定的字符区域使用样式，参见这里1、这里2。</li>
+<li>android:capitalize设置英文字母大写类型。此处无效果，需要弹出输入法才能看得到，参见EditView此属性说明。</li>
+<li>android:cursorVisible设定光标为显示/隐藏，默认显示。</li>
+<li>android:digits设置允许输入哪些字符。如“1234567890.+-*/% ()”</li>
+<li>android:drawableBottom在text的下方输出一个drawable，如图片。如果指定一个颜色的话会把text的背景设为该颜色，并且同时和background使用时覆盖后者。</li>
+<li>android:drawableLeft在text的左边输出一个drawable，如图片。</li>
+<li>android:drawablePadding设置text与drawable(图片)的间隔，与drawableLeft、drawableRight、drawableTop、drawableBottom一起使用，可设置为负数，单独使用没有效果。 </li>
+<li>android:drawableRight在text的右边输出一个drawable，如图片。</li>
+<li>android:drawableTop在text的正上方输出一个drawable，如图片。</li>
+<li>android:editable设置是否可编辑。这里无效果，参见EditView。</li>
+<li>android:editorExtras设置文本的额外的输入数据。在EditView再讨论。</li>
+<li>android:ellipsize设置当文字过长时,该控件该如何显示。有如下值设置：”start”—?省略号显示在开头;”end”——省略号显示在结尾;”middle”—-省略号显示在中间;”marquee” ——以跑马灯的方式显示(动画横向移动)</li>
+<li>android:freezesText设置保存文本的内容以及光标的位置。参见：这里。</li>
+<li>android:gravity设置文本位置，如设置成“center”，文本将居中显示。</li>
+<li>android:hintText为空时显示的文字提示信息，可通过textColorHint设置提示信息的颜色。此属性在EditView中使用，但是这里也可以用。</li>
+<li>android:imeOptions附加功能，设置右下角IME动作与编辑框相关的动作，如actionDone右下角将显示一个“完成”，而不设置默认是一个回车符号。这个在EditView中再详细说明，此处无用。</li>
+<li>android:imeActionId设置IME动作ID。在EditView再做说明，可以先看这篇帖子：这里。</li>
+<li>android:imeActionLabel设置IME动作标签。在EditView再做说明。</li>
+<li>android:includeFontPadding设置文本是否包含顶部和底部额外空白，默认为true。</li>
+<li>android:inputMethod为文本指定输入法，需要完全限定名(完整的包名)。例如：com.google.android.inputmethod.pinyin，但是这里报错找不到。</li>
+<li>android:inputType设置文本的类型，用于帮助输入法显示合适的键盘类型。在EditView中再详细说明，这里无效果。</li>
+<li>android:linksClickable设置链接是否点击连接，即使设置了autoLink。</li>
+<li>android:marqueeRepeatLimit在ellipsize指定marquee的情况下，设置重复滚动的次数，当设置为marquee_forever时表示无限次。</li>
+<li>android:ems设置TextView的宽度为N个字符的宽度。这里测试为一个汉字字符宽度，如图：</li>
+<li>android:maxEms设置TextView的宽度为最长为N个字符的宽度。与ems同时使用时覆盖ems选项。</li>
+<li>android:minEms设置TextView的宽度为最短为N个字符的宽度。与ems同时使用时覆盖ems选项。</li>
+<li>android:maxLength限制显示的文本长度，超出部分不显示。</li>
+<li>android:lines设置文本的行数，设置两行就显示两行，即使第二行没有数据。</li>
+<li>android:maxLines设置文本的最大显示行数，与width或者layout_width结合使用，超出部分自动换行，超出行数将不显示。</li>
+<li>android:minLines设置文本的最小行数，与lines类似。</li>
+<li>android:lineSpacingExtra设置行间距。</li>
+<li>android:lineSpacingMultiplier设置行间距的倍数。如”1.2”</li>
+<li>android:numeric如果被设置，该TextView有一个数字输入法。此处无用，设置后唯一效果是TextView有点击效果，此属性在EdtiView将详细说明。</li>
+<li>android:password以小点”.”显示文本</li>
+<li>android:phoneNumber设置为电话号码的输入方式。</li>
+<li>android:privateImeOptions设置输入法选项，此处无用，在EditText将进一步讨论。</li>
+<li>android:scrollHorizontally设置文本超出TextView的宽度的情况下，是否出现横拉条。</li>
+<li>android:selectAllOnFocus如果文本是可选择的，让他获取焦点而不是将光标移动为文本的开始位置或者末尾位置。TextView中设置后无效果。</li>
+<li>android:shadowColor指定文本阴影的颜色，需要与shadowRadius一起使用。效果：</li>
+<li>android:shadowDx设置阴影横向坐标开始位置。</li>
+<li>android:shadowDy设置阴影纵向坐标开始位置。</li>
+<li>android:shadowRadius设置阴影的半径。设置为0.1就变成字体的颜色了，一般设置为3.0的效果比较好。</li>
+<li>android:singleLine设置单行显示。如果和layout_width一起使用，当文本不能全部显示时，后面用“…”来表示。如android:text=”test_ singleLine “ android:singleLine=”true” android:layout_width=”20dp”将只显示“t…”。如果不设置singleLine或者设置为false，文本将自动换行</li>
+<li>android:shadowDx设置阴影横向坐标开始位置。</li>
+<li>android:shadowDy设置阴影纵向坐标开始位置。</li>
+<li>android:shadowRadius设置阴影的半径。设置为0.1就变成字体的颜色了，一般设置为3.0的效果比较好。</li>
+<li>android:singleLine设置单行显示。如果和layout_width一起使用，当文本不能全部显示时，后面用“…”来表示。如android:text=”test_ singleLine “ android:singleLine=”true” android:layout_width=”20dp”将只显示“t…”。如果不设置singleLine或者设置为false，文本将自动换行</li>
+<li>android:text设置显示文本.</li>
+<li>android:textSize设置文字大小，推荐度量单位”sp”，如”15sp”</li>
+<li>android:textStyle设置字形[bold(粗体) 0, italic(斜体) 1, bolditalic(又粗又斜) 2] 可以设置一个或多个，用“|”隔开</li>
+<li>android:typeface设置文本字体，必须是以下常量值之一：normal 0, sans 1, serif 2, monospace(等宽字体) 3]</li>
+<li>android:height设置文本区域的高度，支持度量单位：px(像素)/dp/sp/in/mm(毫米)</li>
+<li>android:maxHeight设置文本区域的最大高度</li>
+<li>android:minHeight设置文本区域的最小高度</li>
+<li>android:width设置文本区域的宽度，支持度量单位：px(像素)/dp/sp/in/mm(毫米)，与layout_width的区别看这里。</li>
+<li>android:maxWidth设置文本区域的最大宽度</li>
+<li>android:minWidth设置文本区域的最小宽度</li>
+</ol>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section><section id="share"><div class="header"><span>分享文章</span></div><div class="body"><div class="link"><input class="copy-area" readonly="true" id="copy-link" value="http://www.miraclewong.cc/2016/01/09/property-of-edittext/" /></div><div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/b32ef3da1162a.svg"/></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=http://www.miraclewong.cc/2016/01/09/property-of-edittext/&title=Android UI控件 之 EditText的属性 - 肆意生长&summary=这里说是EditText的属性的总结。其实很多的内容，在其他的空间如TextView和Button上，都是通用的。这里一并写上。
+
+android:hint=”请输入数字！”//设置显示在空间上的提示信息
+android:numeri..."><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/80c07e4dbb303.svg"/></a><a class="social share-item email" href="mailto:?subject=Android UI控件 之 EditText的属性 - 肆意生长&amp;body=http://www.miraclewong.cc/2016/01/09/property-of-edittext/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/a1b00e20f425d.svg"/></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/social/8411ed322ced6.svg"/></a></div><div class="qrcode" id="qrcode-wechat" style="visibility:hidden;height:0"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=http://www.miraclewong.cc/2016/01/09/property-of-edittext/index.html"/></div></div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="header cap theme"><span>接下来阅读</span></section><section class="body fs14"><a id="next" href="/2016/01/07/adb-command-line-complete-analysis/">adb命令行的完全解析<span class="note">较早</span></a><div class="line"></div><a id="prev" href="/2016/01/10/reading-system-in-2016/">2016年读书系统<span class="note">较新</span></a><div class="line"></div><a id="more" href="/archives">检索全部文章</a></section></div>
+
+
+
+
+
+
+  <div class='related-wrap md reveal' id="comments">
+    <div class='cmt-title cap theme'>
+      快来参与讨论吧
+    </div>
+    <div class='cmt-body valine'>
+      
+
+<div id="valine_container" class="valine_thread"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+
+    </div>
+  </div>
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/">近期发布</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/friends/">友链</a><a href="/about/#comments">留言板</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://github.com/MiracleWong">GitHub</a></div></div><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<p>本站由 <a href="http://www.miraclewong.cc/">@Miracle Wong</a> 创建，使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.5.2" title="v1.5.2">Stellar</a> 作为主题，您可以在 <a target="_blank" rel="noopener" href="https://github.com/MiracleWong/miraclewong.github.com/">GitHub</a> 找到本站源码。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.5.2';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js',
+    sitesjs: '/js/plugins/sites.js',
+    friendsjs: '/js/plugins/friends.js',
+  };
+
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@6/swiper-bundle.min.css","js":"https://unpkg.com/swiper@6/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+  <script>
+  function getEmojiMaps() {
+    function emoji(path, idx, ext) {
+      return path + "/" + path + "-" + idx + "." + ext;
+    }
+    var emojiMaps = {};
+    for (var i = 1; i <= 54; i++) {
+      emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+    }
+    for (var i = 1; i <= 101; i++) {
+      emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+    }
+    for (var i = 1; i <= 116; i++) {
+      emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+    }
+    for (var i = 1; i <= 125; i++) {
+      emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+    }
+    for (var i = 1; i <= 4; i++) {
+      emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+    }
+    return emojiMaps;
+  }
+  function load_comment(){
+    if(!document.getElementById("valine_container"))return;
+    stellar.loadScript('https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js', {defer:true}).then(function () {
+      const el = document.getElementById("valine_container");
+      var path = el.getAttribute('comment_id');
+      const placeholder = "";
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      var valine = new Valine();
+      valine.init(Object.assign({"js":"https://cdn.jsdelivr.net/gh/XuxuGood/simple-blog-cdn@main/js/Valine.min.js","appId":null,"appKey":null,"placeholder":null,"requiredFields":["nick","mail"],"enableQQ":true,"recordIP":false,"avatar":"robohash","pageSize":10,"lang":"zh-cn","highlight":true,"mathJax":false,"tagMeta":["博主","小伙伴","访客"],"metaPlaceholder":{"nick":"昵称/QQ号(必填)","mail":"邮箱（必填，完全保密）","link":"网址(https://)"},"master":["6783037F2DF30EAB99F9FC256157D875"],"friends":["6783037F2DF30EAB99F9FC256157D875"]}, {
+        el: '#valine_container',
+        path: path,
+        placeholder: placeholder,
+        emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
+        emojiMaps: getEmojiMaps(),
+      }));
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    load_comment();
+  });
+
+</script>
+
+
+
+
+<!-- inject -->
+
+
+  </div>
+</body>
+</html>
