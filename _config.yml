@@ -104,4 +104,4 @@ theme: stellar
 deploy:
   type: 'git'
   repo: git@github.com:MiracleWong/miraclewong.github.com.git
-  branch: master
+  branch: gh-pages
