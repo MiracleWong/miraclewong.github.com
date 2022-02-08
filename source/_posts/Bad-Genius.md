@@ -18,5 +18,5 @@ categories:
 - [强烈推荐《天才枪手》，不只是因为它的剧情，还有……](http://weibo.com/ttarticle/p/show?id=2309404162850305268973)
 - [泰国年度神片“天才枪手”——明明没有鬼，却比鬼片还赤叽](http://weibo.com/ttarticle/p/show?id=2309614162532548980679)
 - [《天才枪手》：另类青春片下埋藏不一样的深意](http://weibo.com/ttarticle/p/show?id=2309614162442656620998)
-![《天才枪手》评价1](http://7sbqqh.com1.z0.glb.clouddn.com/image/jpg/20170927/tian-cai-qiang-shou-1.png)
-![《天才枪手》评价2](http://7sbqqh.com1.z0.glb.clouddn.com/image/jpg/20170927/tian-cai-qiang-shou-2.png)
+![《天才枪手》评价1](http://blog.iotop.work/image/jpg/20170927/tian-cai-qiang-shou-1.png)
+![《天才枪手》评价2](http://blog.iotop.work/image/jpg/20170927/tian-cai-qiang-shou-2.png)

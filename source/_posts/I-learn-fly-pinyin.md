@@ -6,14 +6,14 @@ tags:
 
 > PS: 以下内容均出自小鹤双拼的官方网站，本人仅仅是做个人学习的备忘。
 
-[小鹤双拼](http://www.flypy.com/pin.html)
+[小鹤双拼](https://www.flypy.com/)
 
 ## 三字母韵母的记忆口诀
 
 > 秋闱软月云梳翅，松拥黛粉更航安。
 > 快莺两拦揍夏娃，撇草追鱼滨鸟眠。
 
-![记忆口诀](http://7sbqqh.com1.z0.glb.clouddn.com/image/jpg/20170927/fly-kou-jue.png)
+![记忆口诀](http://blog.iotop.work/image/20170927-fly-pinyin-kou-jue.png)
 
 注：
 

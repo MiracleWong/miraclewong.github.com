@@ -12,7 +12,7 @@ PS：原文地址：[How to become more productive by using 2 computers](http://
 
 我有一个简单明确的关于提高工作效率的方法要与你们分享。
 我注意到一件事情（特别是在我处理难题的时候），例如我打开邮件，打开极客新闻或一些类似的东西，这些耽搁了我的工作。我想这对于大多数的人来说相当常见的事情。这是相当没有效率的：因为思维被打断、失去焦点、不得不进行上下文的转换。
-这也毁掉了[心流（Flow）](http://en.wikipedia.org/wiki/Flow_(psychology) ，这个我们想要进入的状态：
+这也毁掉了[心流（Flow）](http://en.wikipedia.org/wiki/Flow_psychology) ，这个我们想要进入的状态：
 
 >心流（Flow）是一种精神的运行状态，这种状态下人能够全身心的集中，完全的投入，享受活动的过程。本质上，心流（Flow）的特点就是人可以完全吸收他所做的事。
 
@@ -35,8 +35,4 @@ PS：原文地址：[How to become more productive by using 2 computers](http://
 ![家庭办公室](http://static.yeeyan.org/upload/image/2014/05/04/13992156300.jpg)
 
 
-PS：本文由我最先翻译发表在[译言网](http://www.yeeyan.org/)上。原译文地址：[如何通过使用两台电脑变得更加有效率](http://article.yeeyan.org/view/405226/407179)
-
->本文作者：[MiracleWong](http://weibo.com/miraclewong)
-本文出处：http://www.jianshu.com/p/a669ec86a317
-转载请在文章的开头注明<code>作者详细信息</code>和<code>本文出处</code>
+PS：本文由我（MiracleWong）最先翻译发表在[译言网](http://www.yeeyan.org/)上。原译文地址：[如何通过使用两台电脑变得更加有效率](http://article.yeeyan.org/view/405226/407179)

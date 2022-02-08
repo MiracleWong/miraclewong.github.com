@@ -1,4 +1,4 @@
-title: 写给24岁的自己
+title:  打造一款便携版的Sublime Text
 date: 2014-10-03 22:42:47
 tags:
 - Sublime Text
@@ -51,8 +51,8 @@ categories:
 
 
   [1]: http://www.cnblogs.com/figure9/p/sublime-text-complete-guide.html
-  [2]: http://7sbqqh.com1.z0.glb.clouddn.com/image/png/20151016appdata%E7%9B%AE%E5%BD%95.png
-  [3]: http://7sbqqh.com1.z0.glb.clouddn.com/image/png/20151016Data%E7%9B%AE%E5%BD%95.png
+  [2]: http://blog.iotop.work/image/20151016-Appdata-Dir.png
+  [3]: http://blog.iotop.work/image/20151016-Data-Dir.png
   [4]: http://zh.lucida.me/blog/sublime-text-complete-guide/
   [5]: http://www.imooc.com//view/40
   [6]: http://www.qianduan.net/essential-to-sublime-the-text-2-plugins.html
