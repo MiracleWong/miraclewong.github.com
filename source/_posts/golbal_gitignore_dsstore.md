@@ -31,6 +31,8 @@ Git的项目实施的过程中，有一些文件是不需要进行跟踪版本�
 */.DS_Store 
 ```
 
+![gitignore_global](http://images.iotop.work/root_gitignore_global.png)
+
 
 ## 更改 ~/.gitconfig 
 
@@ -44,7 +46,7 @@ ui = auto
 [core] 
 excludesfile = /Users/miraclewong/.gitignore_global 
 ```
-
+![root_gitconfig.png](http://images.iotop.work/root_gitconfig.png)
 
 PS：说明miraclewong是用户名，因个人而有所不同。通过pwd查看。
 
