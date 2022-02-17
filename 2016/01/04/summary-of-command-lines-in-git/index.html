@@ -30,8 +30,8 @@
 <meta property="article:published_time" content="2016-01-04T12:00:00.000Z">
 <meta property="article:modified_time" content="2021-10-26T09:09:38.410Z">
 <meta property="article:author" content="Miracle Wong">
-<meta property="article:tag" content="Git">
 <meta property="article:tag" content="总结">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary">
   
   
@@ -88,7 +88,7 @@
 <p>git init —— 初始化仓库<br>git status —— 查看仓库的状态<br>git add —— 向暂存区中添加文件<br>git commit —— 保存仓库中的历史记录<br>例子：git commit -m “详细信息”<br>或者：git commit后在打开的命令行中写内容<br>    第一行：简述提交的更改内容<br>    第二行：空行<br>    第三行以后：记述更改的原因和详细内容<br>git log —— 查看提交日志<br>git log –pretty=short —— 只显示提交信息的第一行<br>git log FileName [or FolderName] —— 只显示指定目录、文件的日志<br>git log －p —— 显示文件的改动<br>git log –graph —— 使用图形化的形式显示提交日志<br>git diff —— 查看当前工作树和暂存区的差别<br>其中，“＋”加号标出的是新添加的行，被删除的行，则是用“－”减号标出。</p>
 <p>好习惯：<br>在执行git commit命令之前先执行git diff HEAD命令，确认完毕后再进行提交。<br>git branch —— 显示分支一览表，同时确认当前所在分支<br>git checkout -b feature-A —— 创建并切换分支到feature-A<br>git checkout - —— 切换到上一个分支<br>分支的命名:<br>特性分支：feature_xxx<br>修复bug分支：hotfix_xxx<br>git merge –no-ff feature_A  创建合并<br>git reset —— 回溯历史版本<br>例子：git reset –hard 哈希值（4位以上即可，一般为6位）<br>git log —— 该只能查看命令以当前状态为终点的历史日志<br>git reflog —— 查看当前仓库的操作日志</p>
 <p>git commit -amend —— 修改（上一条）提交信息<br>git rebase -i HEAD~N —— 压缩历史：可以选定当前分支中包含HEAD（最新提交）在内的N个最新历史记录为对象</p>
-<p>git remote add URL地址 —— 添加远程仓库<br>例子：git remote add origin <a href="mailto:&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#105;&#116;&#x40;&#x67;&#105;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#x6d;</a>:github-book/git-tutorial.git</p>
+<p>git remote add URL地址 —— 添加远程仓库<br>例子：git remote add origin <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#111;&#x6d;</a>:github-book/git-tutorial.git</p>
 <p>git push —— 推送至远程仓库<br>例子：git push -u origin master<br>当前分支的内容会被推送给远程仓库origin的master分支。<br>-u参数可以在推送的同时，将origin仓库的master分支设置为本地仓库当前分支的upstream（上游）。</p>
 <p>git clone URL地址 —— 获取远程仓库<br>说明：执行git clone 后，会默认处于master分支下，同时系统自动将origin设置成为该远程仓库的标识符。<br>git branch -a —— 查看当前分支的相关信息</p>
 <p>获取远程的某个分支——Feature-D<br>git checkout -b feature-D origin/feature-D </p>
