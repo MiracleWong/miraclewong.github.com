@@ -13,7 +13,7 @@ tags:
 > 秋闱软月云梳翅，松拥黛粉更航安。
 > 快莺两拦揍夏娃，撇草追鱼滨鸟眠。
 
-![记忆口诀](http://blog.iotop.work/image/20170927-fly-pinyin-kou-jue.png)
+![记忆口诀](http://blog-images.iotop.work/image/20170927-fly-pinyin-kou-jue.png)
 
 注：
 

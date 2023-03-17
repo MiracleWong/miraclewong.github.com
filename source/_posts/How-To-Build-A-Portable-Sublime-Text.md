@@ -51,8 +51,8 @@ categories:
 
 
   [1]: http://www.cnblogs.com/figure9/p/sublime-text-complete-guide.html
-  [2]: http://blog.iotop.work/image/20151016-Appdata-Dir.png
-  [3]: http://blog.iotop.work/image/20151016-Data-Dir.png
+  [2]: http://blog-images.iotop.work/image/20151016-Appdata-Dir.png
+  [3]: http://blog-images.iotop.work/image/20151016-Data-Dir.png
   [4]: http://zh.lucida.me/blog/sublime-text-complete-guide/
   [5]: http://www.imooc.com//view/40
   [6]: http://www.qianduan.net/essential-to-sublime-the-text-2-plugins.html

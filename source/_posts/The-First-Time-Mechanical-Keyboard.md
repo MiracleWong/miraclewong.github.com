@@ -16,7 +16,7 @@ The keyboard to cheer you up！
 
 不过打字的感觉就是爽，啪啪啪啪，时尚时尚最时尚。
 上图一张，小小的炫耀一下，满足一下虚荣心吧！
-![机械键盘.jpg](http://blog.iotop.work/image/20141214-jxjp.jpg)
+![机械键盘.jpg](http://blog-images.iotop.work/image/20141214-jxjp.jpg)
 作为对自己有了机械键盘的要求：每个星期在“简书”码子不少于2000字。
 下面附上一个知乎的最佳答案：https://www.zhihu.com/question/26598476/answer/33378613
 

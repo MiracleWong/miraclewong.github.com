@@ -19,4 +19,4 @@ categories:
 PS：将本文的内容放到了[“轻单”](https://qdan.me/)上面，效果非常好。
 地址如下：[锐言锐语——我看《王牌特工》](https://qdan.me/list/VRbBZ_XvAjwgEiI6)
 
-![王牌特工.png](http://blog.iotop.work/image/20150328王牌特工.png)
+![王牌特工.png](http://blog-images.iotop.work/image/20150328王牌特工.png)
